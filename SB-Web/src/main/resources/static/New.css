@@ -1,0 +1,26 @@
+body{
+	background:Pink;
+	font-family: sans-serif;
+}
+
+h1{
+	color:Black;
+	Text-align:Center;
+}
+h2{
+	color:Red;
+	Text-align:Center;
+}
+h3{
+	color:Green;
+	Text-align:Center;
+}
+h2{
+	color:Blue;
+	Text-align:Center;
+}
+p{
+	color:Black;
+	font-weight:300;
+	Text-align:Center;
+}
