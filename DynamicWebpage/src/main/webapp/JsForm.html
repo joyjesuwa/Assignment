@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function myFunction(){
+	document.write("Data is:"+document.getElementByName("gender")[0].value);
+}
+</script>
+</head>
+<body>
+<input type="radio" name="gender" id="male" value="male" onclick="myFunction()">
+<input type="radio" name="gender" id="female" value="female" onclick="myFunction()">
+</body>
+</html>

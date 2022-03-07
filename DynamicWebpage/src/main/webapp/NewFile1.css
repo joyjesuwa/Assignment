@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+body{  /* Here body is a selector*/
+    background-color: pink;   /* Declaration Block*/
+    color:green;
+  /*  background-image: url("");*/
+}
+
+#abc{ /* ID selector*/
+    font-size: 5px;
+    font-style: italic;
+  /*  visibility:hidden;
+    display:inline-block;*/
+}
+.kbc{  /* class selector*/
+    color: lime;
+    border: 1px;
+    text-align:center;
+    font-weight:bold;
+     border: 5px solid red;
+     text-decoration:blink;
+     text-transformation:uppercase;
+     
+     
+}
+.listitem{
+	font-size:large;
+	color:yellow;
+	list-style:lower-greek;
+	list-style-position:outside;
+	list-style-type: hebrew;
+	float:right;
+	/*position:*/
+
+}
+.anotherlist{
+	background-color:green;
+	
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript</title>
+<script type="text/javascript">
+let a;   //declaration of global variable
+a=100; 
+var d=150;//assignment
+const pi=3.14;
+console.log(a); //using the value
+console.log(d);
+console.log(pi);
+function myFunction()
+{
+	a=200;  //hoisting sample changing in global value
+	let b=10;  //local variable
+	var c=20;
+	d=300;
+	pi=2.345;//not allowed...const can't be changed
+	
+}
+myFunction(); //calling function
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(pi);
+</script>
+</head>
+<body>
+
+</body>
+</html>

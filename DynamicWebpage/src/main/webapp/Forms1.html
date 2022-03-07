@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formss1</title>
+<script>
+function myFunction(){
+	var result=parseInt(document.getElementById("result").value);
+	var x=parseInt(document.getElementById("a").value);
+	var y=parseInt(document.getElementById("b").value);
+	alert("submitted"(x*y));
+	
+}
+</script>
+</head>
+<body>
+<form oninput="x.value=parseInt(a.value)+parseint(a.value)" onsubmit="myFunction()">
+<input type="range" id="a" value="0">
+<input type="number" id="b" value="30">
+<output name="x" for="a b"></output>
+<output name="multiply"></output>
+<input type="submit" onclick="myfunction()">
+<input type="button" value="Click here">
+</form>
+</body>
+</html>

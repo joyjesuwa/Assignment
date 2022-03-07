@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Canvas</title>
+</head>
+<body>
+<canvas width="2000px" height="2000px" id="mycanvas"></canvas>
+<script>
+var x=document.getElementById("mycanvas");
+var ctx=x.getContext("2d");
+ctx.moveTo(0,0);
+var mystyle=ctx.createLinearGradient(0,200,200,0)
+var mystyle1=ctx.createRadialGradient(10,200,20,60,60,60)
+mystyle.addColorStop(0,"blue");
+mystyle.addColorStop(1,"green");
+ctx.fillStyle=mystyle;
+ctx.fillStyle=mystyle1;
+ctx.lineTo(200,200);
+ctx.arc(100,40,50,5,10)
+ctx.font="50px Times New Roman"
+ctx.fillText("Joy Jesuwa",100,100)
+ctx.fillRect(200,200,300,300)
+ctx.stroke(); //to draw the line
+
+
+</script>
+</body>
+</html>
+
+// after drawing canvas it will be as png image...we can save it...

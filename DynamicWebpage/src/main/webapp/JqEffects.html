@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<title>JQ Effects</title>
+<script>
+$(document).ready(function(){
+	$("div").animate({
+		width:"100px",
+	height:"200px",
+	bgcolor:"blue",
+	});
+});
+</script>
+<style type="text/css">
+body{
+background-color:pink;
+Justify-content:center;
+display:flex;
+margin:250px;
+}
+div{
+display:block;
+width:370px;
+padding:5px;
+font-size:25px;
+background-color:red;
+border:2px solid green;
+text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+<div ondblclick="alert('Dblclick event has been triggered')">Click me to trigger dblclick event</div>
+</body>
+</html>

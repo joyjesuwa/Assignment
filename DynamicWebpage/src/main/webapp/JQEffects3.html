@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<style type="text/css">
+.newdiv{
+background-color:red;
+color:blue;
+width:700px;
+height:500px;
+text-align:center;
+font-size:40px;
+}
+
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#mydiv").toggle(3000,function(){
+		$("p").append("toggle");
+	});
+	$("#mydiv").slideDown(3000,function(){
+		$("p").append("slideDown");
+	});
+	$("#mydiv").fadeIn(3000,function(){
+		$("p").append("fadeIn");
+	});
+	$("#mydiv").fadeout(3000,function(){
+		$("p").append("fadeOut");
+	});
+	
+});
+//  Without conformation
+/*$(document).ready(function(){
+	$("#mydiv").toggle(3000);
+	$("#mydiv").slideDown(3000);
+	$("#mydiv").fadeIn(3000);
+	$("#mydiv").fadeout(3000);
+	$("p").append("Completed");
+});*/
+</script>
+</head>
+<body>
+<div id="mydiv" class="newdiv">This is simple div</div>
+<p>Application Status:</p>
+</body>
+</html>

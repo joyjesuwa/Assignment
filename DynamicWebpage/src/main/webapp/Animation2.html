@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Animation 2</title>
+<style>
+.mydiv{
+height:200px;
+width:200px;
+background-color:cyan;
+transition: all 1s ease;
+
+}
+.mydiv:hover{
+height:500px;
+width:500px;
+border-radius:200px;
+background-color:green;
+transition: all 2s ease;
+transform:rotate(180deg);
+transform: skewx(45deg);
+transform: skewy(90deg);
+transform: matrix(1,-0.5,0,1,5,0.5);
+transform: scale(2,2);
+}
+.div{
+height:400px;
+width:400px;
+background-color:violet;
+transition: all 1s ease;
+border-radius:200px;
+background-color:green;
+transition: all 2s ease;
+transform:rotate(180deg);
+}
+
+</style>
+</head>
+<body>
+<div class="mydiv">This is my division</div>
+<div class="div">Division</div>
+</body>
+</html>

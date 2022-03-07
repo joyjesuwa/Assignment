@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EventBasedPgm</title>
+<script>
+console.log(x); //undefined variable
+var x=6;
+console.log(x); //print 5
+
+console.log(y); //undefined variable
+let y=6;
+console.log(y);
+
+function myFunction(){
+	document.getElementById("sample").innerHTML="Hello";
+	
+}
+
+</script>
+
+</head>
+<body>
+<button onclick="alert('Today date'+Date()+'!');" >Click</button>
+<button ondblclick="confirm('Donnot drag');">Click</button>
+<button onclick="myFunction()">Click Here</button>
+<p id="sample">Value will place here</p>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms</title>
+<style>
+body{
+background-color:pink;
+}
+h1{
+text-align:center;
+}
+.form{
+display:flex;
+justify-content: center;
+}
+</style>
+</head>
+<body>
+<h1>Register</h1>
+<form class="form" action="http:localhost:8080/employee" method="get" name="registration" id="form_id" autocomplete="on" target="blank">
+<table class="table">
+<tr>
+<td>Name</td>
+<td><input type="text" name="username" placeholder="enter username"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="email" placeholder="enter email" required></td>
+</tr>
+<tr>
+<td>Phone number</td>
+<td><input type="tel" name="phone" placeholder="enter phone number" pattern="[0-9]{10}" title="Only numbers upto 10 digits"></td>
+</tr>
+<tr>
+<td>DOB</td>
+<td><input type="dob" name="dob" placeholder="enter dob"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Male<input type="radio" name="gender" value="Male"></td>
+<td>Female<input type="radio" name="gender" value="Female"></td>
+</tr>
+<tr>
+<td>Qualification</td>
+<td>School</td><td><input type="checkbox" name="qualification" value="School"></td>
+<td>UG College</td><td><input type="checkbox" name="qualification" value="UG College"></td>
+<td>PG College</td><td><input type="checkbox" name="qualification" value="PG College"></td>
+<td>Ph.D College</td><td><input type="checkbox" name="qualification" value="Ph.D College"></td>
+</tr>
+<tr>
+<td>Comment</td>
+<td><textarea rows="10" cols="20" readonly="readonly" placeholder:"Enter Comments"></textarea></td>
+</tr>
+<tr>
+<td>Primary Language</td>
+<td><select name="Language">
+<option selected="selected">Tamil</option>
+<option>English</option>
+</select></td>
+
+
+</tr>
+
+
+
+
+<tr>
+<td><input type="submit" value="submit"></td>
+<td><input type="reset" value="reset"></td>
+</tr>
+</table>
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQEffHomework</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<style>
+div{
+width:100px;
+height:100px;
+background-color:yellow;
+text-align:center;
+}
+</style>
+<script>
+$(document).ready(function(){
+	$("#mydiv").fadeIn(2000);
+	$("#mydiv").fadeOut(2000);
+	$("#mydiv").fadeToggle(2000);
+	$("#mydiv").fadeIt(2000);
+	$("p").append("Completed");
+});
+</script>
+</head>
+<body>
+<p>Status:</p>
+<div id="mydiv" class="newdiv">Division</div>
+</body>
+</html>
