@@ -1,0 +1,14 @@
+package String;
+
+import java.util.*;
+public class StrTok3 {
+    public static void main(String[] args) {
+        String s=new String("27/9/1990:4-4-727:a");
+        StringTokenizer st=new StringTokenizer(s,"/:");
+        System.out.println("TotalTokens:"+st.countTokens());
+        while(st.hasMoreTokens())
+        {
+            System.out.println("  "+st.nextToken());
+        }
+    }
+}
